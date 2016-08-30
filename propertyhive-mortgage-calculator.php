@@ -86,6 +86,7 @@ final class PH_Mortgage_Calculator {
         wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'ph-mortgage-calculator' );
 
+        ob_start();
 ?>
     <div class="mortgage-calculator">
 
@@ -117,6 +118,7 @@ final class PH_Mortgage_Calculator {
 
     </div>
 <?php
+        return ob_get_clean();
     }
 
     public function load_mortgage_calculator_scripts() {
