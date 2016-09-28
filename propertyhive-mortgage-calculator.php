@@ -87,37 +87,17 @@ final class PH_Mortgage_Calculator {
         wp_enqueue_script( 'ph-mortgage-calculator' );
 
         ob_start();
-?>
-    <div class="mortgage-calculator">
 
-        <label><?php echo __( 'Purchase Price', 'propertyhive' ); ?> (&pound;)</label>
-        <input type="text" name="purchase_price" value="" placeholder="500000">
+        $template = locate_template( array('propertyhive/mortgage-calculator.php') );
+        if ( !$template )
+        {
+            include( dirname( PH_MORTGAGE_CALCULATOR_PLUGIN_FILE ) . '/templates/mortgage-calculator.php' );
+        }
+        else
+        {
+            include( $template );
+        }
 
-        <label><?php echo __( 'Deposit Amount', 'propertyhive' ); ?> (&pound;)</label>
-        <input type="text" name="deposit_amount" value="" placeholder="75000">
-
-        <label><?php echo __( 'Interest Rate', 'propertyhive' ); ?> (%)</label>
-        <input type="text" name="interest_rate" value="" placeholder="3.2">
-
-        <label><?php echo __( 'Repayment Period', 'propertyhive' ); ?> (<?php echo __( 'years', 'propertyhive' ); ?>)</label>
-        <input type="text" name="repayment_period" value="" placeholder="25">
-
-        <button><?php echo __( 'Calculate', 'propertyhive' ); ?></button>
-
-        <div class="mortgage-calculator-results" id="results" style="display:none">
-
-            <h4><?php echo __( 'Monthly Costs', 'propertyhive' ); ?>:</h4>
-
-            <label><?php echo __( 'Repayment', 'propertyhive' ); ?> (&pound;)</label>
-            <input type="text" name="repayment" value="" placeholder="" disabled>
-
-            <label><?php echo __( 'Interest Only', 'propertyhive' ); ?> (&pound;)</label>
-            <input type="text" name="interest" value="" placeholder="" disabled>
-
-        </div>
-
-    </div>
-<?php
         return ob_get_clean();
     }
 
