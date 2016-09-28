@@ -27,7 +27,7 @@ final class PH_Mortgage_Calculator {
     /**
      * Main Property Hive Mortgage Calculator Instance
      *
-     * Ensures only one instance of Property Hive Map Search is loaded or can be loaded.
+     * Ensures only one instance of Property Hive Mortgage Calculator is loaded or can be loaded.
      *
      * @static
      * @return Property Hive Mortgage Calculator - Main instance
