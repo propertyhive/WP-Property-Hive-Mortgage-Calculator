@@ -44,7 +44,6 @@ jQuery(document).ready(function()
 {
 	jQuery("body").on('blur', '.mortgage-calculator input', function() 
 	{
-		console.log('eee');
 		ph_mc_calculate();
 	});
 	jQuery("body").on('click', '.mortgage_calculator button', function() 
