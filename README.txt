@@ -3,8 +3,8 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, software, estate agents, estate agent, property management, mortgage, mortgage calculator, repayments
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 4.6.1
-Stable tag: 1.0.2
+Tested up to: 4.9.8
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Quickly and easily add a mortgage calculator to your website
 
 == Description ==
 
-This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a mortgage calculator to your website.
+This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a mortgage calculator to your website by simply adding the shortcode [mortgage_calculator] where you want it to appear.
 
 Users simply enter the purchase price, deposit amount, interest rate and repayment period, then the repayment information is calculated instantly.
 
@@ -44,6 +44,10 @@ Simply add the shortcode [mortgage_calculator] where you want it to appear.
 2. Users are instantly shown monthly repayment information once they've completed the form
 
 == Changelog ==
+
+= 1.0.3 =
+* Added ability to pass in 'price' attribute to shortcode for when being used on a property page
+* Declared support for WP 4.9.8
 
 = 1.0.2 =
 * Provided ability to override template by creating a copy in yourtheme/propertyhive/mortgage-calculator.php
