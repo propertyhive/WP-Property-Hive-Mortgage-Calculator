@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 <div class="mortgage-calculator">
 
     <label><?php echo __( 'Purchase Price', 'propertyhive' ); ?> (&pound;)</label>
-    <input type="text" name="purchase_price" value="" placeholder="500,000">
+    <input type="text" name="purchase_price" value="<?php echo $atts['price']; ?>" placeholder="500,000">
 
     <label><?php echo __( 'Deposit Amount', 'propertyhive' ); ?> (&pound;)</label>
     <input type="text" name="deposit_amount" value="" placeholder="75,000">

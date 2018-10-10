@@ -78,7 +78,7 @@ final class PH_Mortgage_Calculator {
     public function propertyhive_mortgage_calculator_shortcode( $atts )
     {
         $atts = shortcode_atts( array(
-            
+            'price' => ''
         ), $atts );
 
         wp_enqueue_style( 'ph-mortgage-calculator' );
