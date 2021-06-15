@@ -3,8 +3,8 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, software, estate agents, estate agent, property management, mortgage, mortgage calculator, repayments
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 4.9.8
-Stable tag: 1.0.3
+Tested up to: 5.7.2
+Stable tag: 1.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,17 +45,20 @@ Simply add the shortcode [mortgage_calculator] where you want it to appear.
 
 == Changelog ==
 
+= 1.0.4 =
+* Declared support for WordPress 5.7.2
+
 = 1.0.3 =
 * Added ability to pass in 'price' attribute to shortcode for when being used on a property page
-* Declared support for WP 4.9.8
+* Declared support for WordPress 4.9.8
 
 = 1.0.2 =
 * Provided ability to override template by creating a copy in yourtheme/propertyhive/mortgage-calculator.php
-* Declared support for WP 4.6.1
+* Declared support for WordPress 4.6.1
 
 = 1.0.1 =
 * Fixed issue with shortcode output being echoed instead of returned, meaning it would appear in the wrong place
-* Declared support for WP 4.6
+* Declared support for WordPress 4.6
 
 = 1.0.0 =
 * First working release of the plugin
