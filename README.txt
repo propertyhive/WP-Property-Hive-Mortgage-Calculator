@@ -2,8 +2,8 @@
 Contributors: PropertyHive,BIOSTALL
 Tags: mortgage calculator, mortgage, repayments, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
-Tested up to: 5.7.2
-Stable tag: 1.0.4
+Tested up to: 6.5.3
+Stable tag: 1.0.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +47,9 @@ If you want to default the 'Purcase Price' you can also pass a 'price' attribute
 2. Users are instantly shown monthly repayment information once they've completed the form
 
 == Changelog ==
+
+= 1.0.5 =
+* Declared support for WordPress 6.5.3
 
 = 1.0.4 =
 * Declared support for WordPress 5.7.2
