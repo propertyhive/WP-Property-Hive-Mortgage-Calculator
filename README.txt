@@ -15,6 +15,8 @@ This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/
 
 Users simply enter the purchase price, deposit amount, interest rate and repayment period, then the repayment information is calculated instantly.
 
+[Documentation](https://docs.wp-property-hive.com/category/533-mortgage-calculator)
+
 Note: This plugin is independent of Property Hive. You DO NOT need to be using Property Hive to download and use this plugin.
 
 == Installation ==
