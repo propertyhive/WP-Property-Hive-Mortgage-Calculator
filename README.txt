@@ -1,6 +1,6 @@
 === Property Hive Mortgage Calculator ===
 Contributors: PropertyHive,BIOSTALL
-Tags: propertyhive, property hive, property, real estate, software, estate agents, estate agent, property management, mortgage, mortgage calculator, repayments
+Tags: mortgage calculator, mortgage, repayments, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
 Tested up to: 5.7.2
 Stable tag: 1.0.4
