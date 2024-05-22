@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Property Hive Mortgage Calculator
- * Plugin Uri: http://wp-property-hive.com/addons/mortgage-calculator/
+ * Plugin Uri: https://wp-property-hive.com/addons/mortgage-calculator/
  * Description: Quickly and easily add a mortgage calculator to your website using a simple shortcode 
  * Version: 1.0.4
  * Author: PropertyHive
- * Author URI: http://wp-property-hive.com
+ * Author URI: https://wp-property-hive.com
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
