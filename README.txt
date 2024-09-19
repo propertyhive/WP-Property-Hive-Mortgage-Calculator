@@ -39,7 +39,7 @@ Updating should work like a charm; as always though, ensure you backup your site
 
 Simply add the shortcode [mortgage_calculator] where you want it to appear.
 
-If you want to default the 'Purcase Price' you can also pass a 'price' attribute through to the shortcode like so: [mortgage_calculator price="200000"] 
+If you want to default the 'Purchase Price' you can also pass a 'price' attribute through to the shortcode like so: [mortgage_calculator price="200000"] 
 
 == Screenshots ==
 
