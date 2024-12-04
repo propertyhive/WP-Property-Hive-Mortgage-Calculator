@@ -12,28 +12,28 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div class="mortgage-calculator">
 
-    <label><?php echo __( 'Purchase Price', 'propertyhive' ); ?> (&pound;)</label>
-    <input type="text" name="purchase_price" value="<?php echo $atts['price']; ?>" placeholder="500,000">
+    <label><?php echo esc_html( __( 'Purchase Price', 'propertyhive' ) ); ?> (&pound;)</label>
+    <input type="text" name="purchase_price" value="<?php echo esc_attr( $atts['price'] ); ?>" placeholder="e.g. 500,000">
 
-    <label><?php echo __( 'Deposit Amount', 'propertyhive' ); ?> (&pound;)</label>
-    <input type="text" name="deposit_amount" value="" placeholder="75,000">
+    <label><?php echo esc_html( __( 'Deposit Amount', 'propertyhive' ) ); ?> (&pound;)</label>
+    <input type="text" name="deposit_amount" value="" placeholder="e.g. 75,000">
 
-    <label><?php echo __( 'Interest Rate', 'propertyhive' ); ?> (%)</label>
-    <input type="text" name="interest_rate" value="" placeholder="3.2">
+    <label><?php echo esc_html( __( 'Interest Rate', 'propertyhive' ) ); ?> (%)</label>
+    <input type="text" name="interest_rate" value="5.1">
 
-    <label><?php echo __( 'Repayment Period', 'propertyhive' ); ?> (<?php echo __( 'years', 'propertyhive' ); ?>)</label>
-    <input type="text" name="repayment_period" value="" placeholder="25">
+    <label><?php echo esc_html( __( 'Repayment Period', 'propertyhive' ) ); ?> (<?php echo esc_html( __( 'years', 'propertyhive' ) ); ?>)</label>
+    <input type="text" name="repayment_period" value="25">
 
-    <button><?php echo __( 'Calculate', 'propertyhive' ); ?></button>
+    <button><?php echo esc_html( __( 'Calculate', 'propertyhive' ) ); ?></button>
 
     <div class="mortgage-calculator-results" id="results" style="display:none">
 
-        <h4><?php echo __( 'Monthly Costs', 'propertyhive' ); ?>:</h4>
+        <h4><?php echo esc_html( __( 'Monthly Costs', 'propertyhive' ) ); ?>:</h4>
 
-        <label><?php echo __( 'Repayment', 'propertyhive' ); ?> (&pound;)</label>
+        <label><?php echo esc_html( __( 'Repayment', 'propertyhive' ) ); ?> (&pound;)</label>
         <input type="text" name="repayment" value="" placeholder="" disabled>
 
-        <label><?php echo __( 'Interest Only', 'propertyhive' ); ?> (&pound;)</label>
+        <label><?php echo esc_html( __( 'Interest Only', 'propertyhive' ) ); ?> (&pound;)</label>
         <input type="text" name="interest" value="" placeholder="" disabled>
 
     </div>
