@@ -3,7 +3,7 @@ Contributors: PropertyHive,BIOSTALL
 Tags: mortgage calculator, mortgage, repayments, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
 Tested up to: 6.7.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +47,12 @@ If you want to default the 'Purchase Price' you can also pass a 'price' attribut
 2. Users are instantly shown monthly repayment information once they've completed the form
 
 == Changelog ==
+
+= 1.0.7 =
+* Update default interest rate shown in form to 5.1% to be more inline with todays average rates
+* Made interest rate and years default values in inputs, as opposed to placeholders
+* Added sanitization and escape elements output in form template
+* Declared support for WordPress 6.7.1
 
 = 1.0.6 =
 * PHP8.2 compatibility
