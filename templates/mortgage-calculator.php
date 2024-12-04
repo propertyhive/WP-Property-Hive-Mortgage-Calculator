@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     <input type="text" name="purchase_price" value="<?php echo esc_attr( $atts['price'] ); ?>" placeholder="e.g. 500,000">
 
     <label><?php echo esc_html( __( 'Deposit Amount', 'propertyhive' ) ); ?> (&pound;)</label>
-    <input type="text" name="deposit_amount" value="" placeholder="e.g. 75,000">
+    <input type="text" name="deposit_amount" value="<?php echo esc_attr( $deposit ); ?>" placeholder="e.g. 75,000">
 
     <label><?php echo esc_html( __( 'Interest Rate', 'propertyhive' ) ); ?> (%)</label>
     <input type="text" name="interest_rate" value="5.1">

@@ -94,6 +94,12 @@ final class PH_Mortgage_Calculator {
         $atts['price'] = str_replace(",", "", $atts['price']);
         $atts['price'] = ( isset($atts['price']) && $atts['price'] != '' ) ? floatval($atts['price']) : '';
 
+        $deposit = '';
+        if ( !empty($atts['price']) )
+        {
+            $deposit = $atts['price'] * 0.10;
+        }
+
         wp_enqueue_style( 'ph-mortgage-calculator' );
 
         wp_enqueue_script( 'jquery' );
