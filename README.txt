@@ -51,6 +51,7 @@ If you want to default the 'Purchase Price' you can also pass a 'price' attribut
 = 1.0.7 =
 * Update default interest rate shown in form to 5.1% to be more inline with todays average rates
 * Made interest rate and years default values in inputs, as opposed to placeholders
+* If a price is provided as an attribute, default the deposit input to 10% of this price
 * Added sanitization and escape elements output in form template
 * Declared support for WordPress 6.7.1
 
