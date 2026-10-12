@@ -3,7 +3,7 @@
  * Plugin Name: Property Hive Mortgage Calculator
  * Plugin Uri: https://wp-property-hive.com/addons/mortgage-calculator/
  * Description: Quickly and easily add a mortgage calculator to your website using a simple shortcode 
- * Version: 1.0.7
+ * Version: 1.0.8
  * Author: PropertyHive
  * Author URI: https://wp-property-hive.com
  */
@@ -17,7 +17,7 @@ final class PH_Mortgage_Calculator {
     /**
      * @var string
      */
-    public $version = '1.0.7';
+    public $version = '1.0.8';
 
     /**
      * @var Property Hive The single instance of the class
@@ -57,7 +57,7 @@ final class PH_Mortgage_Calculator {
     public function __construct() {
 
         $this->id    = 'mortgagecalculator';
-        $this->label = __( 'Mortgage Calculator', 'propertyhive' );
+        $this->label = 'Mortgage Calculator';
 
         // Define constants
         $this->define_constants();
@@ -65,10 +65,17 @@ final class PH_Mortgage_Calculator {
         // Include required files
         $this->includes();
 
+        add_action( 'init', array( $this, 'init' ), 0 );
+
         add_action( 'wp_enqueue_scripts', array( $this, 'load_mortgage_calculator_scripts' ) );
         add_action( 'wp_enqueue_scripts', array( $this, 'load_mortgage_calculator_styles' ) );
 
         add_shortcode( 'mortgage_calculator', array( $this, 'propertyhive_mortgage_calculator_shortcode' ) );
+    }
+
+    public function init() 
+    {
+        $this->label = __( 'Mortgage Calculator', 'propertyhive' );
     }
 
     /**
